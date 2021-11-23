@@ -2,7 +2,6 @@ const VECHILES_ENDPOINT = 'https://city-bee-sim.herokuapp.com/api/vechiles/';
 //Variables
 
 const vechilesList = document.querySelector('#vechilesList');
-const vechilesCityBeeBtn = document.querySelector('#vechilesCityBee');
 const vechilesLtBtn = document.querySelector('#vechilesLt');
 const vechilesLvBtn = document.querySelector('#vechilesLv');
 const vechilesEeBtn = document.querySelector('#vechilesEe');
@@ -17,7 +16,7 @@ const getAllVechiles = () => {
       for (let car of cars) {
         output += `
           <div>
-          <h3>Car model:${car.model} and our special hour rent price: ${(
+          <h3>Car model : ${car.model} and our special hour rent price: ${(
           car.hour_price +
           car.hour_price * 0.21
         ).toFixed(2)} € (With PVM)</h3>
@@ -84,7 +83,7 @@ const getVechilesEe = () => {
     });
 };
 //Events
-vechilesCityBeeBtn.addEventListener('click', getAllVechiles);
+window.addEventListener('DOMContentLoaded', getAllVechiles);
 vechilesLtBtn.addEventListener('click', getVechilesLt);
 vechilesLvBtn.addEventListener('click', getVechilesLv);
 vechilesEeBtn.addEventListener('click', getVechilesEe);

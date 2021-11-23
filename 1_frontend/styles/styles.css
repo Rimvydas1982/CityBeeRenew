@@ -1,12 +1,37 @@
+body {
+  background-image: url('./img/unnamed.png');
+}
+
 .navigation {
-  font-size: x-large;
+  font-size: 16px;
+  font-weight: 600;
   color: blue;
+  padding: 5px 10px;
+  background-color: rgba(236, 236, 236, 1);
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  line-height: 1.5;
+}
+.navigation a {
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 0 5px;
+}
+.navigation a:hover {
+  border-bottom: 2px solid red;
 }
 /* All models */
 .allModels {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
   padding: 30px;
+  display: flex;
 }
+h3 {
+  padding-right: 50px;
+}
+
 .addModels {
   padding: 50px;
   width: 80%;
@@ -25,26 +50,49 @@
   justify-content: center;
 }
 .addVechile form label {
-  padding: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 0;
+}
+.addVechile form label {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 0;
 }
 
 .addVechile form input[type='submit'] {
-  height: 30px;
   margin-top: 20px;
-  background-color: lightcoral;
+  background-color: var(--bs-dark);
   border-radius: 5px;
-  font-size: 15px;
+  width: 150px;
+  font-weight: 600;
+  color: white;
 }
 /* Add models */
 .addModels form {
-  width: 300px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
+
+.addModels form label {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.addModels form input {
+  font-weight: 600;
+  padding: 5px 2px;
+  border-radius: 5px;
+}
 .addModels form input[type='submit'] {
   margin-top: 20px;
-  background-color: lightcoral;
+  background-color: var(--bs-dark);
   border-radius: 5px;
+  width: 150px;
+  font-weight: 600;
+  color: white;
 }
 /* All vechiles */
 .allVechiles {
@@ -55,10 +103,24 @@
 
 #vechilesList div {
   margin: 10px;
+  padding-top: 5px;
+  min-width: 350px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightcyan;
-  border: solid grey 2px;
+  color: white;
+  background-color: black;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 860px) {
+  #vechilesList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #vechilesList div {
+    max-width: 300px;
+  }
 }

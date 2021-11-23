@@ -10,8 +10,8 @@ const showAllModels = () => {
     .then((data) => {
       allModels.innerHTML = data.reduce((total, currentitem) => {
         total += `
-        <div class="row">
-        <div class="col-sm-3">
+        <div class="row table table-dark table-responsive">
+        <div class="col-sm-10">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Model: ${currentitem.model}</h5>
@@ -25,14 +25,15 @@ const showAllModels = () => {
       }, '');
     });
 };
+
 const showModelsWithVechiles = () => {
   return fetch(VECHILES_ENDPOINT)
     .then((res) => res.json())
     .then((data) => {
       modelsAndVechiles.innerHTML = data.reduce((total, currentitem) => {
         total += `
-        <div class="row">
-        <div class="col-sm-3">
+        <div class="row table table-dark">
+        <div class="col-sm-10">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Model: ${currentitem.model}</h5>
