@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Models</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- SCRIPT-->
+    <script defer src="../scripts/addModel.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <a href="../index.html">All models</a>
+        <a href="">Add Models</a>
+        <a href="./addVechile.html">Add Vechile</a>
+        <a href="./viewVechiles.html">All Vechiles</a>
+      </div>
+    </header>
+    <main class="addModels">
+      <h1>Add new model</h1>
+      <form id="postModel">
+        <label for="addNewModel">Add new Model</label>
+        <input type="text" id="addNewModel" pattern=".{2,20}" /><br /><br />
+        <label for="addPrice">Add Price</label>
+        <input type="text" id="addPrice" /><br />
+        <input type="submit" value="Add model" />
+      </form>
+      <div id="addNewModelMessage"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

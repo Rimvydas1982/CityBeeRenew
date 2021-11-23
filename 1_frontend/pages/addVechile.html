@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Vechile</title>
+    <!-- CUSTOM JS -->
+    <script defer src="../scripts/addVechile.js"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <a href="../index.html">All models</a>
+        <a href="./addModel.html">Add Model</a>
+        <a href="">Add Vechile</a>
+        <a href="./viewVechiles.html">All Vechiles</a>
+      </div>
+    </header>
+    <main class="addVechile">
+      <h1>Add vechile to selected model</h1>
+      <form id="postVechile">
+        <label for="vechiles_select">Select model to add new vechile</label>
+        <select name="vechiles-select" id="vechiles_select"></select
+        ><br />
+
+        <label for="addNumberPlate">Add Number Plate (for ex.LGR555)</label>
+        <input type="text" id="addNumberPlate" pattern=".{6}" /><br />
+        <label for="addCountryLocation"
+          >Add Country Location (LT,LV,EE only)</label
+        >
+        <input type="text" id="addCountryLocation" pattern=".{2}" /><br />
+        <input type="submit" value="Add vechile" />
+      </form>
+      <div id="addNewVechileMessage"></div>
+      <div id="modelsId"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+.navigation {
+  font-size: x-large;
+  color: blue;
+  text-decoration: none;
+}
+/* All models */
+.allModels {
+  padding: 30px;
+}
+.addModels {
+  padding: 50px;
+  width: 80%;
+}
+/* Add vechile */
+.addVechile {
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.addVechile form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.addVechile form label {
+  padding: 5px;
+}
+
+.addVechile form input[type='submit'] {
+  height: 30px;
+  margin-top: 20px;
+  background-color: lightcoral;
+  border-radius: 5px;
+  font-size: 15px;
+}
+/* Add models */
+.addModels form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.addModels form input[type='submit'] {
+  margin-top: 20px;
+  background-color: lightcoral;
+  border-radius: 5px;
+}
+/* All vechiles */
+.allVechiles {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+
+#vechilesList div {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightcyan;
+  border: solid grey 2px;
+}
